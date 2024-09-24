@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gold: #C2A74E;
+}
+
+.text-gold{
+    color: var(--gold);
+}
+
+.bg-gold{
+    background-color: var(--gold);
+}
+
+.rounded-brand{
+    border-radius: 20px;
+}
+
+.hero-section{
+    min-height: 50vh;
+    background-image: url("https://mudita-spa.netlify.app/assests/images/newSpa2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-container{
+    backdrop-filter: blur(5px);
+    min-height: 65vh;
+    align-content: center;
+}
+
+.hero-content{
+    background-color: rgba(0, 0, 0, 0.515);
+    width: 100%;
+    min-height: 65vh;
+}
+
+.bg-brand-light{
+    background-color: #EFEAE6 !important;
+}
+
+.text-brand-light{
+    color: #EFEAE6 !important;
+}
+
+.bars-para{
+    display: none
+}
+
+.nav-bar-wrap div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-bar-wrap p:nth-child(1){
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.call-hover-btn{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+@media screen and (width < 700px) {
+    .bars-para{
+        display: block
+    }
+    .nav-bar-wrap div{
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+    }
+    .nav-bar-wrap p:nth-child(1){
+        text-align: start !important;
+        width: auto;
+    }
+    .hero-section{
+        min-height: 40vh;
+        background-image: url("https://mudita-spa.netlify.app/assests/images/newSpa2.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .hero-container{
+        backdrop-filter: blur(5px);
+        min-height: 40vh;
+        align-content: center;
+    }
+    
+    .hero-content{
+        background-color: rgba(0, 0, 0, 0.515);
+        width: 100%;
+        min-height: 40vh;
+    }
+}
